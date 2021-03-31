@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "MSSqlConnection": "Server=(LocalDb)\\MSSQLLocalDB;Database=FarmerAndPartnersCore;Trusted_Connection=True;"
+  }
+}

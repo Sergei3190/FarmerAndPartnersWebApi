@@ -1,0 +1,66 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список пользователей</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Компании</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Пользователи</a>
+        </li>
+    </ul>
+    <h6 class="m-2">Данные пользователя:</h6>
+    <form name="userForm">
+        <input type="hidden" name="userId" value="0" />
+        <input type="hidden" name="timeStamp" />
+        <div class="col-sm-3">
+
+            <label class="visually-hidden" for="name">Имя пользователя</label>
+            <input class="m-2 form-control" type="text" id="name" placeholder="Имя пользователя" />
+            <div class="m-2 invalid-feedback" id="nameFeedback"></div>
+
+            <label class="visually-hidden" for="login">Логин</label>
+            <input class="m-2 form-control" type="text" id="login" placeholder="Логин" />
+            <div class="m-2 invalid-feedback" id="loginFeedback"></div>
+
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input class="m-2 form-control" type="text" id="password" placeholder="Пароль" />
+            <div class="m-2 invalid-feedback" id="passwordFeedback"></div>
+
+            <label class="visually-hidden" for="company">Название компании</label>
+            <select class="m-2 form-select" id="company" size="1">
+                <option value="0" selected disabled>Выберите название компании</option>
+            </select>
+            <div class="m-2 invalid-feedback" id="companyFeedback"></div>
+
+        </div>
+        <div class="panel-body">
+            <button class="m-2 btn btn-primary" type="submit" id="submit">Сохранить</button>
+            <button class="m-2 btn btn-primary" type="reset" id="reset">Сбросить</button>
+        </div>
+    </form>
+    <h6 class="m-2">Список пользователей:</h6>
+    <div class="p-2">
+        <table class="table table-light table-bordered table-striped table-sm table-condensed">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Имя пользователя</th>
+                    <th scope="col">Логин</th>
+                    <th scope="col">Пароль</th>
+                    <th scope="col">Название компании</th>
+                    <th scope="col">Действие</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+    </div>
+    <script src="js/users.js"></script>
+</body>
+</html>

@@ -27,3 +27,7 @@ ContractStatus - статус договора на услуги с компан
 - Интерактивность
 - Логирование в файл
 - Покрытие тестами
+
+
+Compile result:
+[![.NET](https://github.com/Sergei3190/FarmerAndPartnersWebApi/actions/workflows/dotnet.yml/badge.svg)](https://github.com/Sergei3190/FarmerAndPartnersWebApi/actions/workflows/dotnet.yml)

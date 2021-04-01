@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Список компаний</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Компании</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="users.html">Пользователи</a>
+        </li>
+    </ul>
+    <h6 class="m-2">Данные компании:</h6>
+    <form name="companyForm">
+        <input type="hidden" name="companyId" value="0" />
+        <input type="hidden" name="timeStamp" />
+        <div class="col-sm-3">
+
+            <label class="visually-hidden" for="name">Название компании</label>
+            <input class="m-2 form-control" type="text" id="name" placeholder="Название компании">
+            <div class="m-2 invalid-feedback" id="nameFeedback"></div>
+
+            <label class="visually-hidden" for="contractStatus">ContractStatusName</label>
+            <select class="m-2 form-select" id="contractStatus" size="1">
+                <option value="0" selected disabled>Выберите статус контракта</option>
+            </select>
+            <div class="m-2 invalid-feedback" id="contractStatusFeedback"></div>
+
+        </div>
+        <div class="panel-body">
+            <button class="m-2 btn btn-primary" type="submit" id="submit">Сохранить</button>
+            <button class="m-2 btn btn-primary" type="reset" id="reset">Сбросить</button>
+        </div>
+    </form>
+    <h6 class="m-2">Список компаний:</h6>
+    <div class="p-2">
+        <table class="table table-light table-striped table-bordered table-sm table-condensed">
+            <thead class="table-dark">
+                <tr>
+                    <th scope="col">Id</th>
+                    <th scope="col">Название компании</th>
+                    <th scope="col">Название статуса контракта</th>
+                    <th scope="col">Действие</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </div>
+    <script src="js/companies.js"></script>
+</body>
+</html>

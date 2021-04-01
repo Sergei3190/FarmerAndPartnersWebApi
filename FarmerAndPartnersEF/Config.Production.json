@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "SqlExpressConnection": "Server=.\\SQLEXPRESS;Database=FarmerAndPartnersCore;Trusted_Connection=True;"
+  }
+}
